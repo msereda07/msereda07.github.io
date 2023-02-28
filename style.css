@@ -1,28 +1,47 @@
-body{
+body {
 	background-color: #1f1f1f;
 }
+
 .container {
-	max-width: 500px;
+	max-width: auto;
 	margin: auto;
 
 }
 
-.promo_wrapper{
+.promo_wrapper {
 	display: flex;
 	justify-content: center;
 }
-.promo_item{
+
+.promo_item {
 	height: 100px;
-	width: auto;
+	width: 450px;
 	margin: 10px;
 	border-radius: 30px;
 }
+
 .promo_teleram {
 	background-color: #1c89c4;
 }
+
 .promo_instagram {
-	background-color: #7e0c7e;
+	background-image: linear-gradient(to bottom right, #503ab4, #C13584, #e1303f);
 }
+
+.promo_TikTok {
+	background-color: #000000;
+}
+
+.promo_Discord {
+	background-color: #7289DA;
+}
+
+.promo_Steam {
+	background-image: linear-gradient(to bottom, #1a2b52, #39678b, #66c0f4);
+	/* background-color: #2a475e; */
+
+}
+
 .promo_github {
 	background-color: #353535;
 }
@@ -34,57 +53,36 @@ body{
 
 }
 
-.username{
+.username {
 	font-family: roboto;
 	margin-top: -70px;
 	margin-left: 90px;
 	font-size: 40px;
-	
-}
-.link{
-	font-family: roboto;
-	margin-top: -20px;
-	margin-left: 85px;
+
 }
 
-@media  (max-width: 600px){
-	.promo_item{
+@media (max-width: 650px) {
+	.promo_item {
 		height: 100px;
 		width: auto;
 		border-radius: 30px;
-	}
-	.promo_teleram {
-		background-color: #1c89c4;
-	}
-	.promo_instagram {
-		background-color: #7e0c7e;
-	}
-	.promo_github {
-		background-color: #353535;
+		margin: 10px;
 	}
 
-	.promo_wrapper{
+
+	.promo_wrapper {
 		flex-direction: column;
 		/* padding-top: 50%; */
 
 	}
-	.cat{
-		margin-top: 4	0px;
-		display: flex;
-		justify-content: center;
-	}
-	.username{
+
+	.username {
 		font-family: roboto;
-		margin-top: -70px;
+		margin-top: -65px;
 		margin-left: 90px;
-		font-size: 40px;
-		
+		font-size: 55px;
+
 	}
-	.link{
-		font-family: roboto;
-		margin-top: -25px;
-		margin-left: 85px;
-	}
-	
-	
+
+
 }
