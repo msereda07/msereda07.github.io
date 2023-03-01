@@ -24,12 +24,17 @@ body {
 	background-color: #1c89c4;
 }
 
+
 .promo_instagram {
 	background-image: linear-gradient(to bottom right, #503ab4, #C13584, #e1303f);
 }
 
 .promo_TikTok {
 	background-color: #000000;
+	min-height: 100px;
+	width: 450px;
+	margin: 10px;
+	border-radius: 30px;
 }
 
 .promo_Discord {
@@ -44,6 +49,9 @@ body {
 
 .promo_github {
 	background-color: #353535;
+}
+.promo_Monobank{
+	background-image: linear-gradient(to bottom, #30323d, #212225);
 }
 
 .promo_img img {
@@ -60,8 +68,24 @@ body {
 	font-size: 40px;
 
 }
+.hidden{
+	display: none;
+}
+.qr_code img{
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	border-radius: 30px;
+}
 
 @media (max-width: 650px) {
+	.promo_TikTok {
+		background-color: #000000;
+		min-height: 100px;
+		width: auto;
+		border-radius: 30px;
+		margin: 10px;
+	}
 	.promo_item {
 		height: 100px;
 		width: auto;
