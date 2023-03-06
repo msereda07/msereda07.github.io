@@ -33,7 +33,7 @@ body {
 	position: relative;
 	background-color: #000000;
 	height: 450px;
-	min-width: 300px;
+	min-width: 320px;
 	width: 450px;
 	margin: 10px;
 	border-radius: 30px;
@@ -75,6 +75,10 @@ body {
 	/* rotate: 180deg; */
 }
 .arrow_close img{
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 40px;
 	transform: rotate(-90deg);
 	transition: all 0.25s;
 }
