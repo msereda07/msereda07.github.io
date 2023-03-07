@@ -23,15 +23,6 @@ body {
 		border-radius: 30px;
 	}
 
-	.promo_TikTok {
-		position: relative;
-		background-color: #000000;
-		height: 450px;
-		width: 350px;
-		margin: 10px;
-		border-radius: 30px;
-		transition: height 0.25s 0.25s;
-	}
 }
 
 @media (min-width: 1050px) {
@@ -47,16 +38,6 @@ body {
 		margin: 10px;
 		border-radius: 30px;
 	}
-
-	.promo_TikTok {
-		position: relative;
-		background-color: #000000;
-		height: 450px;
-		width: 350px;
-		margin: 10px;
-		border-radius: 30px;
-		transition: height 0.25s 0.25s;
-	}
 }
 
 
@@ -70,6 +51,9 @@ body {
 	background-image: linear-gradient(to bottom right, #503ab4, #C13584, #e1303f);
 }
 
+.promo_TikTok {
+	background-color: #000000;
+}
 
 .username_blue {
 	color: #197baf;
@@ -93,31 +77,6 @@ body {
 	margin-top: -123px;
 	margin-left: 82px;
 	font-size: 55px;
-}
-
-.Tt_close {
-	height: 100px;
-	/* transform: scale(1.5); */
-	/* transition: all .5s linear; */
-}
-
-.tt_arrow img {
-	position: absolute;
-	right: 30px;
-	top: 30px;
-	width: 40px;
-	transform: rotate(180deg);
-	transition: all 0.25s;
-	/* rotate: 180deg; */
-}
-
-.arrow_close img {
-	position: absolute;
-	right: 30px;
-	top: 30px;
-	width: 40px;
-	transform: rotate(-90deg);
-	transition: all 0.25s;
 }
 
 .promo_Discord {
@@ -150,21 +109,6 @@ body {
 
 }
 
-.qr_code img {
-	display: block;
-	height: 300px;
-	margin: 0 auto;
-}
-
-.close {
-	opacity: 0%;
-	transition: all 0.25s;
-}
-
-.showw {
-	opacity: 100%;
-	transition: all 0.3s 0.3s;
-}
 
 @media (max-width: 700px) {
 
@@ -217,51 +161,15 @@ body {
 	}
 
 	.promo_TikTok {
-		position: relative;
 		background-color: #000000;
-		height: 450px;
-		min-width: 380px;
-		width: auto;
-		margin: 10px;
-		border-radius: 30px;
-		transition: height 0.25s 0.25s;
 	}
-
-
-
-	.Tt_close {
-		height: 100px;
-		/* transform: scale(1.5); */
-		/* transition: all .5s linear; */
-	}
-
-	.tt_arrow img {
-		position: absolute;
-		right: 30px;
-		top: 30px;
-		width: 40px;
-		transform: rotate(180deg);
-		transition: all 0.25s;
-		/* rotate: 180deg; */
-	}
-
-	.arrow_close img {
-		position: absolute;
-		right: 30px;
-		top: 30px;
-		width: 40px;
-		transform: rotate(-90deg);
-		transition: all 0.25s;
-	}
-
+	
 	.promo_Discord {
 		background-color: #7289DA;
 	}
 
 	.promo_Steam {
 		background-image: linear-gradient(to bottom, #1a2b52, #39678b, #66c0f4);
-		/* background-color: #2a475e; */
-
 	}
 
 	.promo_github {
@@ -274,22 +182,6 @@ body {
 		margin-top: 15px;
 		width: 60px;
 
-	}
-
-	.qr_code img {
-		display: block;
-		height: 300px;
-		margin: 0 auto;
-	}
-
-	.close {
-		opacity: 0%;
-		transition: all 0.25s;
-	}
-
-	.showw {
-		opacity: 100%;
-		transition: all 0.3s 0.3s;
 	}
 
 	.username {
