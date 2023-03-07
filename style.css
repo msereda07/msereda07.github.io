@@ -8,17 +8,58 @@ body {
 
 }
 
-.promo_wrapper {
-	display: flex;
-	justify-content: center;
+
+@media (min-width: 700px) {
+	.promo_wrapper {
+		display: grid;
+		grid-template-columns: auto auto;
+		justify-content: center;
+	}
+
+	.promo_item {
+		height: 100px;
+		width: 350px;
+		margin: 10px;
+		border-radius: 30px;
+	}
+
+	.promo_TikTok {
+		position: relative;
+		background-color: #000000;
+		height: 450px;
+		width: 350px;
+		margin: 10px;
+		border-radius: 30px;
+		transition: height 0.25s 0.25s;
+	}
 }
 
-.promo_item {
-	height: 100px;
-	width: 450px;
-	margin: 10px;
-	border-radius: 30px;
+@media (min-width: 1050px) {
+	.promo_wrapper {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		justify-content: center;
+	}
+
+	.promo_item {
+		height: 100px;
+		width: 350px;
+		margin: 10px;
+		border-radius: 30px;
+	}
+
+	.promo_TikTok {
+		position: relative;
+		background-color: #000000;
+		height: 450px;
+		width: 350px;
+		margin: 10px;
+		border-radius: 30px;
+		transition: height 0.25s 0.25s;
+	}
 }
+
+
 
 .promo_teleram {
 	background-color: #197baf;
@@ -29,43 +70,38 @@ body {
 	background-image: linear-gradient(to bottom right, #503ab4, #C13584, #e1303f);
 }
 
-.promo_TikTok {
-	position: relative;
-	background-color: #000000;
-	height: 450px;
-	min-width: 320px;
-	width: 450px;
-	margin: 10px;
-	border-radius: 30px;
-	transition: height 0.25s 0.25s;
-}
-.username_blue{
+
+.username_blue {
 	color: #197baf;
 	font-family: roboto;
 	margin-top: -65px;
 	margin-left: 80px;
 	font-size: 55px;
 }
-.username_red{
+
+.username_red {
 	color: #ff3a5b;
 	font-family: roboto;
 	margin-top: -118px;
 	margin-left: 83px;
 	font-size: 55px;
 }
-.username_white{
-	color:#e6e6e6;
+
+.username_white {
+	color: #e6e6e6;
 	font-family: roboto;
 	margin-top: -123px;
 	margin-left: 82px;
 	font-size: 55px;
 }
-.Tt_close{
+
+.Tt_close {
 	height: 100px;
 	/* transform: scale(1.5); */
 	/* transition: all .5s linear; */
 }
-.tt_arrow img{
+
+.tt_arrow img {
 	position: absolute;
 	right: 30px;
 	top: 30px;
@@ -74,7 +110,8 @@ body {
 	transition: all 0.25s;
 	/* rotate: 180deg; */
 }
-.arrow_close img{
+
+.arrow_close img {
 	position: absolute;
 	right: 30px;
 	top: 30px;
@@ -82,6 +119,7 @@ body {
 	transform: rotate(-90deg);
 	transition: all 0.25s;
 }
+
 .promo_Discord {
 	background-color: #7289DA;
 }
@@ -111,64 +149,147 @@ body {
 	font-size: 40px;
 
 }
-.hidden{
-	/* display: none; */
-	opacity: 0%;
-	transition: all 0.25s ;
-}
-.qr_code img{
+
+.qr_code img {
 	display: block;
 	height: 300px;
 	margin: 0 auto;
-	opacity: 100%;
-	transition: all 0.25s 4s;
-	/* border-radius: 30px; */
 }
 
-@media (max-width: 650px) {
-	.Tt_close{
-		height: 100px;
-	}
-	.promo_TikTok {
-		background-color: #000000;
-		min-height: 100px;
-		width: auto;
-		border-radius: 30px;
-		margin: 10px;
-	}
-	.username_blue{
+.close {
+	opacity: 0%;
+	transition: all 0.25s;
+}
+
+.showw {
+	opacity: 100%;
+	transition: all 0.3s 0.3s;
+}
+
+@media (max-width: 700px) {
+
+	.username_blue {
 		color: #197baf;
 		font-family: roboto;
 		margin-top: -65px;
 		margin-left: 90px;
 		font-size: 55px;
 	}
-	.username_red{
+
+	.username_red {
 		color: #ff3a5b;
 		font-family: roboto;
 		margin-top: -117px;
 		margin-left: 94px;
 		font-size: 55px;
 	}
-	.username_white{
-		color:#e6e6e6;
+
+	.username_white {
+		color: #e6e6e6;
 		font-family: roboto;
 		margin-top: -121px;
 		margin-left: 92px;
 		font-size: 55px;
 	}
+
+	.promo_wrapper {
+		flex-direction: column;
+		/* padding-top: 50%; */
+
+	}
+
 	.promo_item {
 		height: 100px;
+		min-width: 380px;
 		width: auto;
 		border-radius: 30px;
 		margin: 10px;
 	}
 
 
-	.promo_wrapper {
-		flex-direction: column;
-		/* padding-top: 50%; */
+	.promo_teleram {
+		background-color: #197baf;
+	}
 
+
+	.promo_instagram {
+		background-image: linear-gradient(to bottom right, #503ab4, #C13584, #e1303f);
+	}
+
+	.promo_TikTok {
+		position: relative;
+		background-color: #000000;
+		height: 450px;
+		min-width: 380px;
+		width: auto;
+		margin: 10px;
+		border-radius: 30px;
+		transition: height 0.25s 0.25s;
+	}
+
+
+
+	.Tt_close {
+		height: 100px;
+		/* transform: scale(1.5); */
+		/* transition: all .5s linear; */
+	}
+
+	.tt_arrow img {
+		position: absolute;
+		right: 30px;
+		top: 30px;
+		width: 40px;
+		transform: rotate(180deg);
+		transition: all 0.25s;
+		/* rotate: 180deg; */
+	}
+
+	.arrow_close img {
+		position: absolute;
+		right: 30px;
+		top: 30px;
+		width: 40px;
+		transform: rotate(-90deg);
+		transition: all 0.25s;
+	}
+
+	.promo_Discord {
+		background-color: #7289DA;
+	}
+
+	.promo_Steam {
+		background-image: linear-gradient(to bottom, #1a2b52, #39678b, #66c0f4);
+		/* background-color: #2a475e; */
+
+	}
+
+	.promo_github {
+		background-color: #353535;
+	}
+
+
+	.promo_img img {
+		margin-left: 15px;
+		margin-top: 15px;
+		width: 60px;
+
+	}
+
+	.qr_code img {
+		display: block;
+		height: 300px;
+		margin: 0 auto;
+	}
+
+	.close {
+		opacity: 0%;
+		transition: all 0.25s;
+	}
+
+	.showw {
+		opacity: 100%;
+		transition: all 0.3s 0.3s;
 	}
 
 	.username {
